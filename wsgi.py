@@ -25,7 +25,7 @@ def require_appkey(view_function):
 
 # Class for Emotion 
 class Emotion(Resource):
-	@require_appkey
+	#@require_appkey
 	def post(self):
 		text = request.json['text']
 		bert = request.json['bert']
