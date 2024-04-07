@@ -22,3 +22,9 @@ API for applying sentiment analysis using BERT or BETO model.
 4. Make API requests
 
     Base URL: `http://127.0.0.1:5000/api/v1/`
+
+## How to deploy
+1. 
+    `docker build -t tsa_bert_beto:latest .`
+2. 
+    `docker run -d --name TSA_BERT_BETO -p 3006:3006 tsa_bert_beto:latest`
